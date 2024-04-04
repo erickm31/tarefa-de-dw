@@ -1,18 +1,16 @@
-<style>
-
 h1 {color: #000000;
 text-align: center;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 900;
-background-color:#b00b55;}
+background-color:#ffffff;
+border: #b00b55 solid 5px;}
 
 
 h2 {color: rgb(0, 0, 0);
-background-color: #9aec75;
+background-color: #773434;
 text-align: center;}
 
 span {color:#b00b55;}
-body{background-color: #c0eeb1;}
-body{color: #003a00;}
-    
-</style>
+body{background-color: #000000;}
+body{color: #000000;}
+
