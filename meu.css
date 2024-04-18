@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap')
+ 
+h1 {text-align: center;}
+
+.cabecalho {font-size: 0.8em;
+text-align:center;}
+
+.titulo {text-transform:uppercase;
+font-family:"Anton";}
+
+.versiculo {font-size: 1.3em;
+font-family:"Shadows Into Light";
+text-align: center;}
+
+.texto {font-family:"Nunito";
+font-size:1,1em;
+height:1,5;
+text-align: justify;}
+
+.importante {font: size 1.4em;
+font-weight: bold;
+text-align: center;
+color: green;
+font-family:"Nunito";    
+}
+
+.desafio {font-style:italic;
+text-align: center;
+background-color: rgb(177, 177, 177);
+font-family:'Nunito';
+}
+
+
+
