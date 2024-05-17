@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {background-color: #b00b55;}
+        div{
+            text-align: center;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        div.container {
+            width:100vw;
+            height: 100vh;
+            
+        }
+            
+        div#cabecalho {
+            background-color: #b00b55;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(#b00b55,yellow);
+        }
+        div#secao1 {
+            background-color: #7c063b;
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(yellow,#b00b55)
+        }
+        div#secao2 {
+            background-color: #36031a;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(#b00b55,yellow);
+        }
+        ul.menu{
+            background-color: #b00b55;
+        }
+        ul.menu li{
+            display: inline-block;
+            list-style: none;
+            
+        }
+        ul.menu a{
+            width: 120px;
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        ul.menu a:hover{
+            background-color: white;
+            border: 1px solid rgb(0, 0, 0);
+            color:black;
+
+            
+            
+        }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+
+        <ul class="menu">
+            <li><a href="#cabecalho">cabecalho</a></li>
+            <li><a href="#secao1">seção 1</a></li>
+            <li><a href="#secao2">seção 2</a></li></ul>
+
+
+        <div id="cabecalho"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a at consequuntur odit cum ea eius perspiciatis nesciunt pariatur, quis dolores ducimus? Voluptates odit, id possimus expedita nisi reprehenderit neque!</h3></div>
+
+        <div id="secao1"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non placeat quia perspiciatis unde, aliquid facere sit ab, fugiat suscipit laborum earum dicta odit. Sequi eius nam veniam consequuntur. Quia!</h3></div>
+
+        <div id="secao2"><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatum repellat inventore rem nemo voluptate corrupti voluptatem consequuntur facilis quae doloremque, vero illo est numquam. Perferendis dignissimos porro recusandae ab?</h3></div>
+
+    </div>
+    
+    
+</body>
+</html>
