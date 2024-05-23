@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jacquard+12&family=Jaro:opsz@6..72&family=Yarndings+20&family=Yarndings+20+Charted&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap');
+
+        :root {
+         --cor-fundo: black;
+         --cor-primaria:#babeee;
+         --cor-secundaria: #b00b55;
+         --cor-terciaria: #aabbaa;
+         --cor-quartearia: #420420;
+         --cor-quintupla:white;
+         --fonte-principal:50px"Honk", system-ui;
+         --font-secundaria:20px "Jaro";
+         --font-terciaria:30px"Bungee Spice", sans-serif;
+         --altura-cabecalho:60px;
+         --altura-textos:120px
+        }
+
+
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;    
+        }
+
+        body{background-color: var(--cor-fundo);}
+
+
+        .container{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            /* border-radius: 10px;
+            margin: 10px; */
+            background:linear-gradient(to right, #b00b55,yellow);
+            height: calc(100vh - 100px);
+            
+            
+        }
+        .container h1{
+            margin-bottom: 10px;
+            color: var(--cor-primaria);
+            font:var(--fonte-principal);
+        }
+
+        .container ul{
+            margin-left: 15px;
+            color: var(--cor-quintupla);
+            font:var(--font-secundaria);
+
+        }
+        .cabecalho{
+            text-align: center;
+            background:linear-gradient(to left, yellow,orange);
+            font:var(--font-terciaria);
+            border: 2px solid white;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: visible;
+            height: var(--altura-cabecalho);
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+        <div class="cabecalho">
+            cabeçalho
+        </div>
+        <div class="container">
+            <h1>lista de tarefas</h1>
+            <ul>
+                <li>tarefa 1</li>
+                <li>tarefa 2</li>
+                <li>tarefa 3</li>
+        
+            </ul>
+        </div>
+
+    
+</body>
+</html>
