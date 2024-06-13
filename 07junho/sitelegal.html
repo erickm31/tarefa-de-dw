@@ -14,11 +14,13 @@
                 --cor-2:#000000;
                 --cor-3:blue;
                 --cor-4: rgb(65, 175, 65);
+                --imagem-1:url("https://store.supercell.com/images/brawlstars/special-offers-bg.png");
             }
             *{
                 padding: 0;
                 margin: 0;
                 box-sizing: 0;
+                scroll-behavior: smooth;
             }
 
             body{
@@ -46,18 +48,101 @@
                 display: flex;
                 text-decoration: none;
                 justify-content: center;
-            
-            
+                
                 }
+
+            div.container {
+                
+                width:100vw;
+                height: 100vh;
+                background-position: TOP center;
+            }
+
+            div#ofertas{ width: 100%;
+            height: 80vh;
+            text-align: center;
+            font-size: 25px;
+            font-family: "Anton";
+            color: white;
+            background-color: #aa67ee;
+            background-image:var(--imagem-1);
+            display: flex;
+            
+            
+            }
+
+            div#passes{width: 100%;
+            height: 90vh;
+            font-family: "Anton";
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            background-image:var(--imagem-1);
+            border-top: 5px solid #000000
+            ;}
+
+            div#outros{width: 100%;
+            height: 90vh;
+            background-color: rgb(102, 56, 230);
+            font-family: "Anton";
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            background-image:var(--imagem-1);
+            border-top: 5px solid #000000
+            ;}
+
+            div.produto{background-color: green;
+            height: 250px;
+            width: 250px;
+            font-family: "Anton";
+            align-items:center;
+            border: 2px solid black;
+            border-radius: 5px ;
+            margin: 10px;
+        }
+            .box1{background-color: green;
+                
+            }
+            .box2{
+                
+            }
+            .text{font-size: 25px;
+            font-family: "Anton";
+            color: white;
+            text-align: center;
+            background-color: #aa67ee;
+            background-image: var(--imagem-1);
+        
+        }
+        
+        
+            
 
 
         </style>
 </head>
 <body>
-    <ul class="menu">
-        <li><a href="#ofertas">ofertas</a></li>
-        <li><a href="#passes">passes</a></li>
-    </ul>
+    <div class="container">
+        <ul class="menu">
+
+            <li><a href="#ofertas">ofertas</a></li>
+            <li><a href="#passes">passes</a></li>
+            <li><a href="#outros">outros</a></li>
+        </ul>
+        <div>
+            <div class="text">ofertas</div>
+            <div id="ofertas">
+                <div class="produto box1">2000 gemas<img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F7dffba86ddee756a7bdba012ac7051ee.png&w=256&q=100" alt=""></div>
+                <div class="produto">950 gemas<img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2Fa0d91b59d1e3183212eb231f1d28e57f.png&w=256&q=100" alt=""></div>
+
+                
+        </div>
+            <div id="passes">passes</div>
+            <div id="outros">outros</div>
+        </div>
+    </div>
+    
     
 </body>
 </html>
