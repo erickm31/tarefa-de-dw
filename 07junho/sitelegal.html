@@ -17,9 +17,9 @@
                 --imagem-1:url("https://store.supercell.com/images/brawlstars/special-offers-bg.png");
             }
             *{
-                padding-left: 0;
+                padding: 0;
                 margin: 0;
-                box-sizing: 0;
+                box-sizing: border-box;
                 scroll-behavior: smooth;
             }
 
@@ -56,10 +56,10 @@
                 width:100vw;
                 height: 100vh;
                 background-position: TOP center;
+                
             }
-
             div#ofertas{ width: 100%;
-            height: 80vh;
+            height: 90vh;
             text-align: center;
             font-size: 25px;
             font-family: "Anton";
@@ -67,7 +67,10 @@
             background-color: #aa67ee;
             background-image:var(--imagem-1);
             display: flex;
-            justify-content:space-around ;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
             
             
             
@@ -80,8 +83,10 @@
             font-size: 25px;
             text-align: center;
             background-image:var(--imagem-1);
-            border-top: 5px solid #000000
-            ;}
+            border-top: 5px solid #000000;
+            padding-top: 50px;
+        
+        }
 
             div#outros{width: 100%;
             height: 90vh;
@@ -102,22 +107,43 @@
             border: 2px solid black;
             border-radius: 5px ;
             margin: 10px;
-        }
-            .box1{background-color: green;
-                
             }
-            .box2{
-                
-            }
-            .text{font-size: 25px;
+
+            .text{font-size: 50px;
             font-family: "Anton";
             color: white;
             text-align: center;
-            background-color: #aa67ee;
+            background-color: black;
             background-image: var(--imagem-1);
+            padding-top: 50px;
+            border-bottom: 7px solid black;
+            border-top: 7px solid black;
+            
         
         }
-        .menu{position: fixed;
+            .menu{position: fixed;
+             width: 100vw;}
+
+             .preco{
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+             }
+
+            .text1{font-size: 50px;
+            font-family: "Anton";
+            color: white;
+            text-align: center;
+            background-color: black;
+            background-image: var(--imagem-1);
+            border-top: 7px solid black;
+            }
+            .produtop{
+                background-color: #7312d4;
+                width: 350px;
+                height: 350px;
+                display:;
+            }
         
         
         
@@ -138,13 +164,24 @@
         <div>
             <div class="text">ofertas</div>
             <div id="ofertas">
-                <div class="produto box1">2000 gemas<img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F7dffba86ddee756a7bdba012ac7051ee.png&w=256&q=100" alt=""></div>
-                <div class="produto">950 gemas<img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2Fa0d91b59d1e3183212eb231f1d28e57f.png&w=256&q=100" alt=""></div>
-                <div class="produto">360 gemas <img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F7c4dcf10b740debf169c3703c825ec19.png&w=256&q=100" alt=""></div>
+                <div class="produto">2000 gemas<img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F7dffba86ddee756a7bdba012ac7051ee.png&w=256&q=100" alt=""><div class="preco">R$249,90</div></div>
+                <div class="produto">950 gemas<img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2Fa0d91b59d1e3183212eb231f1d28e57f.png&w=256&q=100" alt=""><div class="preco">R$279,90</div></div>
+                <div class="produto">360 gemas <img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F7c4dcf10b740debf169c3703c825ec19.png&w=256&q=100" alt=""><div class="preco">R$109,90</div></div>
+                <div class="produto">170 gemas <img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2Fd04c36aee9f3b57f25f1e9b251c4a34d.png&w=256&q=100" alt=""><div class="preco">R$54,90</div></div>
+                <div class="produto">80 gemas <img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F5f6d3279da4a5a3f3ced878ddf4d6d5e.png&w=256&q=100" alt=""><div class="preco">R$27,90</div></div>
+                <div class="produto">30 gemas <img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2Fd399702f09774d49020d14f484000a3f.png&w=256&q=100" alt=""><div class="preco">R$10,90</div></div>
 
                 
         </div>
-            <div id="passes">passes</div>
+        <div class="passes text1">passes</div>
+            <div id="passes">
+                <div class="produtop"><img src="https://store.supercell.com/_next/image?url=%2Fimages%2Fbrawlstars%2F22aca1ef196c745a8717c6ce0da39120.png&w=384&q=75" alt=""></div>
+
+
+
+
+
+            </div>
             <div id="outros">outros</div>
         </div>
     </div>
