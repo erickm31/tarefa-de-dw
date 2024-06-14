@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            :root{
+                --cor-1:#922ef3;
+                --cor-2:#000000;
+                --cor-3:blue;
+                --cor-4: rgb(65, 175, 65);
+                --imagem-1:url("https://store.supercell.com/images/brawlstars/special-offers-bg.png");
+            }
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+
+            body{
+                background-color: var(--cor-1);
+            }
+
+            ul.menu a{
+                color: white;
+                padding: 10px;
+                margin-bottom: 5px;
+                font-family: "Anton";
+                font-size: 30px;
+                text-decoration: none;
+                margin: 20px;
+            }
+        
+            ul.menu li{
+                display: inline-block;
+                list-style: none;
+            }
+
+            ul.menu{
+                background-color:black;
+                height:50px;
+                display: flex;
+                text-decoration: none;
+                justify-content: center;
+            }
+
+            div.container {
+                width:100vw;
+                height: 100vh;
+                background-position: TOP center;
+            }
+
+            div#ofertas{ width: 100%;
+                height: 100vh;
+                text-align: center;
+                font-size: 25px;
+                font-family: "Anton";
+                color: white;
+                background-color: #842cdd;
+                background-image:var(--imagem-1);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div#passes{width: 100%;
+                height: 100vh;
+                font-family: "Anton";
+                color: white;
+                font-size: 25px;
+                text-align: center;
+                background-image:var(--imagem-1);
+                border-top: 5px solid #000000;
+                padding-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div#outros{width: 100%;
+                height: 90vh;
+                background-color: rgb(102, 56, 230);
+                font-family: "Anton";
+                color: white;
+                font-size: 25px;
+                text-align: center;
+                background-image:var(--imagem-1);
+                border-top: 5px solid #000000;
+                
+                justify-content: center;
+                align-items:center; 
+                
+                
+            ;}
+
+            div.produto{background-color: green;
+                height: 250px;
+                width: 250px;
+                font-family: "Anton";
+                align-items:center;
+                border: 2px solid black;
+                border-radius: 5px ;
+                margin: 10px;
+            }
+
+            .text{font-size: 50px;
+                font-family: "Anton";
+                color: white;
+                text-align: center;
+                background-color: black;
+                background-image: var(--imagem-1);
+                padding-top: 50px;
+                border-bottom: 7px solid black;
+                font-style: italic;
+            }
+            
+            .text1{font-size: 50px;
+                font-family: "Anton";
+                color: white;
+                text-align: center;
+                background-color: black;
+                background-image: var(--imagem-1);
+                font-style: italic;
+            }
+                 
+            .texto2{
+                font-size: 50px;
+                font-family: "anton";
+                color: white;
+                text-align: center;
+                background-color: black;
+                background-image: var(--imagem-1);
+                font-style: italic;
+            }
+            
+            .menu{position: fixed;
+                width: 100vw;}
+                
+            .preco{
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+             }
+
+            .produtop{
+                background-color: #7312d4;
+                width: 350px;
+                height: 350px;
+                font-size: 37px;
+                margin: 10px;
+                border: 2px solid black;
+                font-family: "anton";
+            }
+            .fundo{
+                background: url(https://store.supercell.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshop_item_bg_flare.7dc868b0.png&w=1920&q=75);
+                background-position: center;
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .font1{
+                font-family: "nabla";
+            }
+            .font{
+                font-family: "Kanit";
+            }
+            .jogos{
+                font-size: 30px;
+                background-color: #7312d4;
+               
+                
+                
+                
+                
+                
+                
+            }
+            
