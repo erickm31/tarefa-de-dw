@@ -32,6 +32,7 @@
 
             body{
                 background-color: var(--cor-1);
+                background-image: var(--imagem-1);
             }
 
             ul.menu a{
@@ -67,7 +68,7 @@
             }
 
             ul.menu{
-                background-color:black;
+                background-color:var(--cor-2);
                 height:50px;
                 display: flex;
                 text-decoration: none;
@@ -86,7 +87,7 @@
                 font-size: 25px;
                 font-family: "Anton";
                 color: white;
-                background-color: #842cdd;
+                background-color: #7518d3;
                 background-image:var(--imagem-1);
                 display: flex;
                 flex-wrap: wrap;
@@ -101,11 +102,12 @@
                 font-size: 25px;
                 text-align: center;
                 background-image:var(--imagem-1);
-                border-top: 5px solid #000000;
+                border-top: 5px solid var(--cor-2);
                 padding-top: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-color:#852fdb ;
             }
 
             div#outros{width: 100%;
@@ -118,10 +120,7 @@
                 background-image:var(--imagem-1);
                 border-top: 5px solid #000000;
                 font-family: "anton";
-                justify-content: center;
-                display: flex;
-                flex-wrap: nowrap;
-                gap: 10px
+                
 
                 
                 
@@ -168,18 +167,26 @@
                 font-style: italic;
             }
             
+            
+            a{text-decoration: none;
                 
+            }
             .preco{
                 background-color: black;
                 color: white;
                 border-radius: 5px;
+                
+                
              }
             .preco:hover{
                 background-color: white;
                 color: black;
                 border-radius: 5px;
                 border: 2px solid black;
-                animation: 0.2s;            }
+                animation: 0.2s;
+                transition: 0.2s
+            
+            }
 
             .produtop{
                 background-color: #7312d4;
@@ -202,6 +209,9 @@
             .font{
                 font-family: "Kanit";
                 
+                
+
+                
             }
             .jogos{
                 
@@ -213,18 +223,27 @@
             }
             .jogo1 .grow{
                 width: 200px;
-                transition: width 0.5s ease-in-out
+                transition: width 0.5s ease-in-out;
             }
 
             .jogo1 .grow:hover{
                 width: 250px;
             }
             .voltar{
+                height: 30px;
+                width: 99%;
+                background-color: #000000;
+                margin: 2px;
                 display: flex;
-                position: fixed;
-                height: 1000px;
-                width: 300px;
-                justify-content: end;
                 align-items:end;
-                
+                justify-content: center;
             }
+            .container1 .jogo1{
+            display: flex;
+            padding: 10px;
+            padding-top: 20px;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            }
+             
