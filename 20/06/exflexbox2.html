@@ -10,44 +10,42 @@
         box-sizing: border-box;
     }
     .box1{
-        width: 15%;
+        width: 10vw;
         height: 100vh;
         background-color: red;
-        display: flex;
-        flex-direction: column;
     }
     .box{
         background-color: blue;
-        width: 85%;
+        width: 90vw;
         height: 10vh;
-    }
-    .container{
-        display: flex;
-        
-    }
-    .box2{
-        background-color: green;
-        width:85%;
-        height: 80vh;
-    }
-    .meio{
-        display: flex;
-        flex-flow:column;
         align-items: flex-end;
     }
+    .container{
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100vh;
+    }
 
-
+    .box2{
+        background-color: green;
+        width:90vw;
+        height: 80vh;
+    }
+    .box3{
+        background-color: yellow;
+        width: 90vw;
+        height: 10vh;
+    }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box1"></div>
-        <div class="meio">
-            <div class="box"></div>
-            <div class="box2"></div>
-        </div>
-
-
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
     </div>
     
 </body>
