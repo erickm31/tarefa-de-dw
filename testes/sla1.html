@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-section h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .form-section p {
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .form-section input[type="text"], 
+        .form-section input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-section button {
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form-section .social-login {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-section .social-login button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-section .social-login button img {
+            margin-right: 10px;
+        }
+
+        .form-section .terms {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+
+        .image-section {
+            flex: 1;
+            background-image: url('https://via.placeholder.com/800');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .image-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .quote {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 16px;
+            z-index: 1;
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 24px;
+        }
+
+        .quote::after {
+            content: '"';
+            font-size: 24px;
+        }
+
+        .quote p {
+            margin: 5px 0;
+        }
+
+        .quote .author {
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-section">
+        <h1>Sign in or create an account</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <button type="submit">Continue</button>
+        </form>
+        <div class="social-login">
+            <button><img src="https://img.icons8.com/color/16/000000/google-logo.png"/> Continue with Google</button>
+            <button><img src="https://img.icons8.com/ios-filled/16/000000/mac-os.png"/> Continue with Apple</button>
+            <button><img src="https://img.icons8.com/color/16/000000/facebook-new.png"/> Continue with Facebook</button>
+        </div>
+        <p class="terms">By signing in or creating an account, you agree with our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Statement</a></p>
+    </div>
+    <div class="image-section">
+        <div class="quote">
+            <p>"The curation is highly focused on design and the scene is a clever marketplace that allows users to replicate the design at home."</p>
+            <p class="author">Kaiya Carder - Freelancer</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
