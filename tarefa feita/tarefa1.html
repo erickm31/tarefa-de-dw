@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./tarefa1.js" defer></script>
+
+    <style>
+        .calculo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        input{
+            width: 20%;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <h1>calcule juros composto</h1>
+
+    
+        <label for="capital">capital:</label>
+        <input type="text" id="capital">
+        
+        <label for="juros">juros:</label>
+        <input type="text" id="juros">
+        
+        <label for="periodo">periodo da aplicação</label>
+        <input type="text" id="periodo">
+
+        <button id="montante" onclick="calcularjuros()">calcular</button>
+        
+        <div id="saida">montante:</div>
+
+
+
+
+    
+</body>
+</html>
