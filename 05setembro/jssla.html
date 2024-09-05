@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jssla.js" defer></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        
+        .container{
+            display: flex;
+            gap: 120px;
+        }
+        .recebe{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-left: 25px;
+            background-color: rgb(196, 194, 194); 
+            gap: 20px;
+            border: 1px black solid;
+            
+        }
+        button{
+            width: 20%;
+            margin-left: 10px;
+            
+            
+        }
+        input{
+            width: 50%;
+            background-color: rgb(248, 228, 208);
+            margin-left: 10px;
+            
+            
+        }
+        .ex{
+            background-color: rgb(196, 194, 194);
+            width: 40%;
+            border: 1px black solid;
+            padding-left: 10px;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        #saida{
+            border-top: 1px black solid;
+            background-color: red;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    <br>
+    <div class="container">
+
+        <div class="recebe">
+            <label for="velomaxvia"></label>
+            <input min="0" type="number" id="velomaxvia" placeholder="velocidade máxima da via">
+            <label for="velocar"></label>
+            <input min="0" type="number" id="velocar" placeholder="velocidade do veiculo">
+            <button id="calcular" onclick="calculamulta()"> calcular</button>
+            <div id="saida"></div>
+
+
+        </div>
+        <div class="ex">
+            <p>multa por excesso de velocidade</p>
+            <br>
+            <p><strong>R$130,16</strong> - Até 20% acima do limite</p>
+            <p><strong>R$ 195,23</strong> - De 20% até 50% acima do limite permitido</p>
+            <p><strong>R$ 880,41</strong> - Acima de 50% do limite permitido</p>
+        </div>
+
+
+
+
+    </div>
+     
+</body>
+</html>
