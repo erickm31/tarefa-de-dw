@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.bg-verde {
+  background-color: #b2f2bb;
+}
+
+.bg-roxo {
+  background-color: #d0bfff;
+}
+
+.bg-azul-100 {
+  background-color: #a5d8ff;
+}
+
+.bg-azul-500 {
+  background-color: #228be6;
+}
+
+.bg-cinza {
+  background-color: #868e96;
+}
+
+.bg-laranja-100 {
+  background-color: #ffd8a8;
+}
+
+.bg-laranja-500 {
+  background-color: #f08c00;
+}

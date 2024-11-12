@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         .menu{
@@ -62,6 +63,8 @@
             justify-content: center;
             border: 2px #616161 solid;
             box-shadow: 0 0 7px #b00b55;
+            width: 100vw;
+            
         }
         .novi{
             width: 30vw;
@@ -84,6 +87,69 @@
         }
         strong{
             color: red;
+        }
+        .pesquisar{
+            font-size: 30px;
+            background: linear-gradient(to right, gray, #b00b55);
+            margin-top: 20px;
+            align-items: center;
+            width: 100vw;
+        }
+        .pesquisar input{
+            height: 40px;
+            width: 30%;
+            margin: 10px;
+            font-size: 24px;
+            
+
+        }
+        .prod{
+            height: 30vw;
+            width: 30vw;
+            box-shadow: 0 0 12px black;
+            margin-left: 30px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: start;
+        }
+        .pesq{
+            display: flex;
+
+        }
+        #preco{
+            display: flex;
+            margin-left: 30px;
+            font-size: 25px;
+            flex-direction: column;
+            margin-top: 20px;
+            
+            
+        }
+        .estoque{
+            font-size: 20px;
+            margin-top: 20px;
+            color: gray;
+        }
+        .nao{
+            margin-top: 20px;
+            font-style: oblique;
+            color: gray;
+            font-size: 20px;
+
+        }
+        #procura{
+            height: 40px;
+            width: 10%;
+            border-radius: 5px;
+        }
+        .compra{
+            width: 11vw;
+            height: 6vh;
+            color: white;
+            background-color: black;
+            padding-left: 4px;
+            margin-top: 20px;
+            font-size: 40px;
         }
  
     </style>
@@ -111,9 +177,35 @@
         <div class="text">
 
             <p> Mais 4 compras em qualquer produto Wishin' para receber um cartão de <strong>60%</strong> de desconto!!</p>
-
         </div>
-    
+        <div class="pesquisar">
+            
+            <input type="text" placeholder = "pesquise modelos aqui" id="digite">
+            <button  onclick=""  id="procura">continuar</button>
+            
+        </div>
+        
+        
+        
+    </div>
+    <div class="pesq">
+        <div id="imagens">
+            <img class="prod" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLaHSU6ZlgzDm0TT_c2gfQRrcQ5PybuSFT3w&s" alt="">
+        
+        
+        </div>
+        <div id="preco">
+            <p>nome: Tênis Knitte Arrow</p>
+            
+            <p class="estoque">em estoque</p>
+
+            <p class="nao"><s>R$299,90</s></p>
+            <p><strong>R$169,90</strong></p>
+            <div class="compra">
+                comprar
+            </div>
+        
+        </div>
     </div>
     
 </body>
