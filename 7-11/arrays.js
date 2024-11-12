@@ -53,13 +53,25 @@ function allEquals(arr) {
 //console.log(allEquals([1, 2, 1])); // Deve exibir: false
 
 //5---------------------------------------
-Function removeDuplicates(arr){
+function removeDuplicates(arr){
     let unico = []
     for (i = 0; i < arr.length; i ++){
-        if( )
+        let x = true
+        for (let j = 0; j < unico.length; j++){
+            if (arr[i] === unico[j]){
+                x = false
+                break
+            }
+        }
+        if(x){
+            unico.push(arr[i])
+        }
     }
+    return unico
 }
 
+//console.log(removeDuplicates([1, 2, 2, 3, 3, 3, 4])); // Deve exibir: [1, 2, 3, 4]
+//console.log(removeDuplicates(["apple", "apple", "banana"])); // Deve exibir: ["apple", "banana"]
 
 
 //6---------------------------------------
@@ -77,9 +89,23 @@ function average(arr) {
 
 //7---------------------------------------
 
+function mergeArrays(arr1, arr2){
+    let juntar = []
+    for(let i = 0; i < arr1.length; i++){
+        juntar.push(arr1[i])
+    }
+    for (let j = 0; j < arr2.length; j++){
+        juntar.push(arr2[j])
+    }
+    return juntar
+}
+
+//console.log(mergeArrays([1, 2], [3, 4])); // Deve exibir: [1, 2, 3, 4]
+//console.log(mergeArrays(["apple"], ["banana", "cherry"])); // Deve exibir: ["apple", "banana", "cherry"]
 
 
 //8 --------------------------------------------------
+
 function getEvenNumbers(vetor){
     let novovetor = []
 
@@ -95,4 +121,26 @@ function getEvenNumbers(vetor){
 
 //9--------------------------------------------------
 
+function reverseArray(arr){
+    let reverter = []
+    for ( i = arr.length - 1 ; i >= 0 ; i--){
+        reverter.push(arr[i])
+    }
+    return reverter
+}
+//console.log(reverseArray([1, 2, 3, 4])); // Deve exibir: [4, 3, 2, 1]
+//console.log(reverseArray(["apple", "banana"])); // Deve exibir: ["banana", "apple"]
+
+
 //10--------------------------------------------------
+
+function findIndex(arr, element){
+    for ( i = 0; i < arr.length; i++){
+        if (arr[i] === element){
+            return i
+        }
+    }return -1
+}
+
+// console.log(findIndex([1, 2, 3, 4], 3)); // Deve exibir: 2
+// console.log(findIndex(["apple", "banana"], "cherry")); // Deve exibir: -1
