@@ -1,4 +1,5 @@
 {
+  
   "name": "tarefa-de-dw",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +10,7 @@
     "start": "node server.js"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/erickm31/tarefa-de-dw.git"
   },
   "keywords": [],

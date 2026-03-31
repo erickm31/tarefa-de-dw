@@ -2,8 +2,15 @@
 import Fastify from 'fastify'
 import cors from '@fastify/cors'
 
+// Registramos o plugin de CORS para permitir que qualquer origem acesse nossa API
+
+
+
 const server = Fastify({ logger: false })
 
+server.register(cors, {
+    origin: '*',
+    methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS']})
 
 
 server.get('/', async (request, reply) => {
@@ -23,11 +30,13 @@ server.setNotFoundHandler(async (request, reply) => {
 })
 
 const PORT = 3000
+
 try {
   await server.listen({ port: PORT })
-  console.log(`Servidor rodando com FASTIFY  na porta ${PORT}`)
+  console.log(`Servidor rodando com FASTIFY na porta ${PORT}`)
 } catch (err) {
 
   server.log.error(err)
   process.exit(1)
 }
+
